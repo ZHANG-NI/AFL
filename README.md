@@ -2,7 +2,7 @@
 
 Our paper *“[An Agentic Framework with LLMs for Solving Complex Vehicle Routing Problems](https://openreview.net/forum?id=BMOgYw4EhQ)”* has been accepted to ICLR 2026.
 
-![Framework](.\Framework.png)
+![Framework](Framework.png)
 
 #### Generate code for solving VRPs
 
@@ -42,3 +42,4 @@ If you find this codebase useful, please consider citing the paper:
 }
 
 ```
+
