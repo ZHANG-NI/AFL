@@ -1,6 +1,6 @@
 # An Agentic Framework with LLMS for Solving Complex Vehicle Routing Problems
 
-Our paper *“[An Agentic Framework with LLMs for Solving Complex Vehicle Routing Problems]([An Agentic Framework with LLMs for Solving Complex Vehicle Routing Problems | OpenReview](https://openreview.net/forum?id=BMOgYw4EhQ&referrer=[the profile of Ni Zhang](%2Fprofile%3Fid%3D~Ni_Zhang6)))”* has been accepted to ICLR 2026.
+Our paper *“[An Agentic Framework with LLMs for Solving Complex Vehicle Routing Problems](https://openreview.net/forum?id=BMOgYw4EhQ)”* has been accepted to ICLR 2026.
 
 ![Framework](.\Framework.png)
 
@@ -40,4 +40,5 @@ If you find this codebase useful, please consider citing the paper:
   year      = {2026},
   url       = {https://openreview.net/forum?id=BMOgYw4EhQ}
 }
+
 ```
