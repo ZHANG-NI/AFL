@@ -112,7 +112,7 @@ if __name__ == "__main__":
             print(f"generate_code took: {end_time_generate - start_time_generate:.2f}s, "
               f"now_took: {end_time_generate - start_time_describe:.2f}s")
           
-        out_dir = os.path.join(os.getcwd(), "code_reevo")
+        out_dir = os.path.join(os.getcwd(), "code")
         out_file = os.path.join(out_dir, f"{specific_name}.py")
         if os.path.exists(out_file):
             with open(out_file, "r", encoding="utf-8") as f:
