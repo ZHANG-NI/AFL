@@ -13,7 +13,7 @@ python main.py --path "path_to_instance_floder"
 The generated code will be stored in the `code` directory. For example, to generate code for CVRP, you can run:
 
 ```bash
-x python main.py --path vrp/cvrp/50
+python main.py --path vrp/cvrp/50
 ```
 
 #### Execute Generated Code for solving VRPs
@@ -42,4 +42,5 @@ If you find this codebase useful, please consider citing the paper:
 }
 
 ```
+
 
