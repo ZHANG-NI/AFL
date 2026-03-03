@@ -35,7 +35,7 @@ def run_generated_code(out_file, full_vrp_path,iteration=100):
         stdout = result.stdout.strip()
         print("Program Output:\n", stdout)
 
-        # 提取 best_cost
+
         match1 = re.search(r"the process is successful, the best cost is (\d+(\.\d+)?)", stdout)
         match2 = re.search(r"the initial process is successful, the initial cost is (\d+(\.\d+)?)", stdout)
         if match1 and match2:
@@ -71,7 +71,7 @@ if __name__ == "__main__":
     os.environ.setdefault("MKL_NUM_THREADS", "1")
     os.environ.setdefault("OPENBLAS_NUM_THREADS", "1")
 
-    out_dir = os.path.join(os.getcwd(), "code_reevo")
+    out_dir = os.path.join(os.getcwd(), "code")
     out_file = os.path.join(out_dir, f"{specific_name}.py")
 
 
@@ -98,7 +98,6 @@ if __name__ == "__main__":
         fout.write("VRP Results Log\n")
         fout.write("==============================\n")
 
-    # 并行执行
     with ProcessPoolExecutor(max_workers=args.workers) as ex:
         futures = {ex.submit(_run_one, t): t[1] for t in tasks}
         for fut in tqdm(as_completed(futures), total=total, desc="Processing VRP files (parallel)"):
